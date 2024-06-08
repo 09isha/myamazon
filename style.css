@@ -1,22 +1,23 @@
+
 *{
     margin: 0;
     font-family: Arial;
-    border: border-box; /* padding or border-size should be included in content height, weight*/
+    box-sizing: border-box; /* padding or border-size should be included in content height, weight*/
 }
 a{
     text-decoration: none;
 }
 .navbar{
-    height: 60px;
+    height: 62px;
     background-color: #0f1111;
     color: white;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; 
 }
 .nav-logo{
     height: 50px;
-    width: 100px;
+    width: 102px;
 }
 .logo{
     background-image: url("amazon-logo.png");
@@ -31,7 +32,7 @@ a{
   border: 1.5px solid white;  
 }
 .nav-add{
-    padding:8px 8px 8px 8px;
+    padding:8px;
 }
 .add-icon{
     display: flex;
@@ -53,12 +54,12 @@ a{
 }
 /*box3*/
 .nav-search{
-    width:670px;
+    width:50%;
     height:40px;
     display: flex;
     justify-content: space-evenly;
     border-radius:4px;
-    background-color: pink;
+    
     
 }
 
@@ -91,7 +92,7 @@ a{
 }
 /* box4 */
 .india{
-    padding:8px 8px 8px 8px;
+    padding:8px;
 }
 .flag{
     background-color: #0f1111;
@@ -101,7 +102,7 @@ a{
 }
 /* box5 */
 .signin{
-    padding:8px 8px 8px 8px;
+    padding:8px;
 }
 span{
     font-size: 0.85rem ;
@@ -124,11 +125,11 @@ span{
 
 }
 .returns{
-    padding:8px 8px 8px 8px;
+    padding:8px;
 }
 .cart{
     display: flex;
-    padding:8px 8px 8px 8px;
+    padding:8px;
 }
 /* .cart i{
     isse sirf i pe hoga
@@ -136,7 +137,7 @@ span{
 
 /* pannel */
 .pannel{
-    height:39px;
+    height:40px;
     background-color: #222f3d;
     color: white;
     display: flex;
@@ -145,19 +146,26 @@ span{
 
 }
 .pannel-all{
-    width:45px;
+    width:49px;
     font-size:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 .pannel-all a{
     color:white; 
     text-decoration: none;
+    margin-left: 4px;
+    
 }
 .pannel-opt a{
     display: inline;
     margin-left: 10px;
     text-decoration: none;
     color:white;
+    padding:6px;
     
 }
 .pannel-opt{
@@ -166,13 +174,15 @@ span{
     
 }
 .pannel-deals{
-    width: 230px;
+    width: 250px;
     font-size: 15px;
     font-weight:700;
+    
 }
 .pannel-deals a{
     color:white;
     text-decoration: none;
+    
 }
 /* hero-section*/
 .hero-section{
@@ -298,7 +308,7 @@ h2{
     justify-content: space-evenly;
     background-color: #222f3d;
     color: white;
-    height: 400px;
+    height: 500px;
     padding-top: 40px;
 
 }
@@ -343,16 +353,18 @@ ul a:hover{
     background-color: #0f1111;
     color:white;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height:400px;
+    justify-content:center;
+    align-items: center;
     flex-wrap: wrap;
-    padding:20px 300px 20px 300px;
+    padding:30px 25%;
+    height:auto;
+
 }
 .other{
     width:120px;
     height:100px;
-    margin:15px 12px 15px 8px;    
+    margin:15px 8px; 
+      
 }
 .other a{
     color:#dddddd;
@@ -386,3 +398,86 @@ ul a:hover{
     text-align: center;
     padding-top:5px;
 }
+@media (max-width:600px){
+    .foot-pannel4{
+        padding: 30px 5px;
+    }
+    .other{
+        margin:8px 4px;
+    }
+    .foot-pannel2{
+        padding-left:2px;
+        padding-right: 2px;
+        font-size: 12px;
+        height:auto;
+    }
+    .nav-bar{
+        height:auto;
+    }
+    .pannel{
+        height:auto;
+    }
+    .hero-mess{
+        height:auto;
+    }
+    .pannel-opt{
+        width:auto;
+    }
+    .pannel-opt a{
+        padding:0px;
+    }   
+}
+
+@media (max-width: 1200px) {
+    .nav-search {
+        width: 60%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .nav-search {
+        width: 50%;
+    }
+    
+    .navbar {
+        justify-content: space-between;
+    }
+    
+  
+}
+
+@media (max-width: 768px) {
+    .nav-search {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    .nav-logo {
+        width: 80px;
+    }
+    .logo {
+        height: 40px;
+    }
+    .search-icon {
+        width: 40px;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .foot-pannel2{
+        padding-top: 20px;
+        height:auto;
+    }
+    ul p{
+      font-weight: 600;  
+      font-size: 14px;
+    }
+}  
